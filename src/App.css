@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px;
+}
+.left-nav {
+  width: 15%;
+  background-color: blue;
+  padding: 10px;
+  border-radius: 10px;
+}
+.middle-nav {
+  width: calc(100% - 40%);
+  background-color: blue;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.middle-nav span {
+  font-size: 30px;
+}
+.right-nav {
+  width: 15%;
+  background-color: blue;
+  padding: 10px;
+  border-radius: 10px;
+}
+/* main-page----------- */
+
+.main-page {
+  display: flex;
+  padding: 20px;
+  gap: 10px;
+}
+/* left-bar----------- */
+.left-bar {
+  width: 15%;
+  height: 80vh;
+  background-color: blueviolet;
+  border-radius: 10px;
+}
+.main-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* background-color: red; */
+  height: 70vh;
+  padding: 20px;
+}
+.top-div {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2em;
+}
+.top-div div {
+  display: flex;
+  gap: 1em;
+}
+.top-div div h3 {
+  font-weight: 500;
+  font-size: 1em;
+}
+.top-div div span {
+  font-size: 1.2em;
+}
+.bottom-div div {
+  display: flex;
+  gap: 1.2em;
+  align-items: center;
+}
+.bottom-div span {
+  font-size: 1.5em;
+  font-weight: 500;
+}
+.bottom-div div h3 {
+  font-weight: 500;
+  font-size: 1em;
+  margin-top: -7px;
+}
+
+/* posts----------------- */
+.posts {
+  width: calc(100% - 32%);
+  height: 80vh;
+  background-color: brown;
+  border-radius: 10px;
+}
+.right-bar {
+  width: 15%;
+  height: 80vh;
+  background-color: blueviolet;
+  border-radius: 10px;
+}
