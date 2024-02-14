@@ -8,10 +8,13 @@ import { MdSubscriptions } from "react-icons/md";
 import { CgProfile } from "react-icons/cg";
 import { MdLogout } from "react-icons/md";
 
-function LeftBar() {
+function LeftBar({ color, bgColor }) {
   return (
-    <div>
-      <div className="main-left">
+    <>
+      <div
+        className="main-left"
+        style={{ color: `${color}`, backgroundColor: `${bgColor}` }}
+      >
         <div className="top-div">
           <div>
             <span>
@@ -67,7 +70,7 @@ function LeftBar() {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

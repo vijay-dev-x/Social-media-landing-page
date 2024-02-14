@@ -7,15 +7,16 @@ body {
   font-family: "Poppins", sans-serif;
 }
 .navbar {
+  position: sticky;
+  top: 0;
   display: flex;
   justify-content: space-between;
   margin: 15px;
-  top: 0;
 }
-.main-navbar {
-  position: sticky;
-  top: 0px;
-}
+// .main-navbar {
+//   position: sticky;
+//   top: 0px;
+// }
 .left-nav {
   width: 15%;
   background-color: blue;
@@ -49,8 +50,8 @@ body {
 }
 /* left-bar----------- */
 .left-bar {
-  position: sticky !important;
-  top: 0px;
+  position: sticky;
+  top: 0;
   width: 15%;
   height: 80vh;
   background-color: blueviolet;
@@ -58,6 +59,7 @@ body {
 }
 .main-left {
   position: sticky;
+  top: 40;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

@@ -4,21 +4,21 @@ import { FaHeart } from "react-icons/fa";
 import { FaComment } from "react-icons/fa";
 import { FaShare } from "react-icons/fa";
 
-function Post() {
+function Post({ data, color, bgColor }) {
   return (
     <div>
-      <div className="main-post">
+      <div
+        className="main-post"
+        style={{ color: `${color}`, backgroundColor: `${bgColor}` }}
+      >
         <div className="top-div">
           <div className="left-div">
             <div className="logo">
-              <img
-                src="https://images.pexels.com/photos/1722198/pexels-photo-1722198.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                alt="logo img"
-              />
+              <img src={data.pImg} alt="logo img" />
             </div>
             <div className="logo-data">
-              <h3>City Light</h3>
-              <p>amaizing city</p>
+              <h3>{data.userName}</h3>
+              <p>{data.title}</p>
             </div>
           </div>
           <div className="right-div">
@@ -28,33 +28,30 @@ function Post() {
           </div>
         </div>
         <div className="caption">
-          <p>Lorem amet consectetur adipisicing elit.</p>
+          <p>{data.description}</p>
         </div>
         <div className="post-img">
           <div className="img">
-            <img
-              src="https://images.pexels.com/photos/1721637/pexels-photo-1721637.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              alt="post img"
-            />
+            <img src={data.mImg} alt="post img" />
           </div>
           <div className="like-com-share">
             <div>
-              <span>
+              <span className="like-post">
                 <FaHeart></FaHeart>
               </span>
-              10.2k
+              {data.like}k
             </div>
             <div>
               <span>
                 <FaComment></FaComment>
               </span>
-              2.8k
+              {data.comment}k
             </div>
             <div>
               <span>
                 <FaShare></FaShare>
               </span>
-              908
+              {data.share}k
             </div>
           </div>
         </div>
